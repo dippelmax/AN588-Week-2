@@ -60,5 +60,44 @@ v <- 101:200
 v[seq(from = 1, to = 100, by = 2)]
 
 # Challenge 1
+vector <- c("Stately, plump Buck Mulligan came from the stairhead, bearing a bowl of lather on which a mirror and a razor lay crossed.")
+vector
+install.packages("stringr")
+library(stringr)
+?stringr
+?str_split
+str_split(vector, " ", n = 3)
+
+# More practice
+m <- matrix(data = 1:80, nrow = 8, ncol = 10, byrow = FALSE)
+m
+x <- m[4, 5]
+x
+
+# Challenge 2
+
+m <- matrix(data = 1:80, nrow = 8, ncol = 10, byrow = FALSE)
+m
+x <- m[4, 5]
+x
+
+c2 <- m[ , 2]
+c3 <- m[ , 3]
+c6 <- m[ , 6]
+x <- cbind(c2,c3,c6)
+x
+
+r6 <- m[6 , ]
+r8 <- m[8 , ]
+x <- cbind(r6,r8)
+x
+
+
+
+# Challenge 3
+
+
+
+
 
 
