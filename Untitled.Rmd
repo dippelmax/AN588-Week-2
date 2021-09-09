@@ -26,3 +26,39 @@ plot(pressure)
 ```
 
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+
+# Module 4
+
+# Practice 
+m <- matrix(data = c(1, 2, 3, 4), nrow = 2, ncol = 2)
+m
+m <- matrix(data = c(1, 2, 3, 4, 5, 6), nrow = 2, ncol = 3, byrow = FALSE)
+m
+m <- matrix(data = c(1, 2, 3, 4, 5, 6), nrow = 2, ncol = 3, byrow = TRUE)
+m
+v1 <- c(1, 2, 3, 4)
+v2 <- c(6, 7, 8, 9)
+m1 <- rbind(v1, v2)
+m1
+m2 <- cbind(v1, v2)
+m2
+class(m1)
+dim(m1)
+class(m2)
+dim(m2)
+colnames(m2)
+rownames(m2)
+str(m2)
+a <- array(data = 1:90, dim = c(5, 6, 3))
+a
+v <- 1:100  #This creates a vector containing all integers from 1 to 100
+v
+v[1:15]
+v[c(2, 4, 6, 8, 10)]
+v <- 101:200
+v[seq(from = 1, to = 100, by = 2)]
+
+# Challenge 1
+
+
