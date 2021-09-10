@@ -665,6 +665,17 @@ Primates</code></pre>
 ## $Strepsirhini$Lorisoidea
 ## [1] &quot;Lorisidae&quot; &quot;Galagidae&quot;</code></pre>
 </div>
+<div id="more-practice-1" class="section level1">
+<h1>more practice</h1>
+<p>df &lt;- data.frame(firstName = c(“Nitin”, “Silvy”, “Ingrid”, “Claire”), major = c(“Biology (CM)”, “Anthropology (Bio)”, “Anthropology (Medical)”, “Biology (EEB)”), sex = c(“M”, “F”, “F”, “F”), yearInProgram = c(1, 2, 2, 3)) df</p>
+<p>df &lt;- read.csv(“~/Desktop/BI 588/AN588-Week-2/random-people.csv”, sep = “,”, header = TRUE, stringsAsFactors = FALSE) # only print select columns df[, c(1, 3, 4, 11, 12)] str(df) df[, 3] str(df[, 3]) df<span class="math inline">\(name.last str(df\)</span>name.last) df[3] str(df[3]) df[“name.last”] str(df[“name.last”])</p>
+<p>df &lt;- cbind(df, id = c(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20)) df &lt;- cbind(df, school = c(“BU”, “BU”, “Harvard”, “Harvard”, “BU”, “Boston College”, “MIT”, “BU”, “BU”, “UMASS Boston”, “Harvard”, “BU”, “Boston College”, “BU”, “Harvard”, “MIT”, “Harvard”, “BU”, “UMASS Boston”, “Harvard”)) df</p>
+<p>new_df &lt;- df[df$school == “BU”, ] new_df new_df &lt;- df[df$school == “BU”, c(“name.last”, “name.first”, “school”)] new_df</p>
+</div>
+<div id="challenge-5" class="section level1">
+<h1>Challenge 5</h1>
+<p>m &lt;- matrix(data = c(3, 0, 1, 23, 1, 2, 33, 1, 1, 42, 0, 1, 41, 0, 2), nrow = 5, ncol = 3, byrow = TRUE) m df &lt;- data.frame(m) df new_df &lt;- df[df$X2, ] new_df factor_df &lt;- as.factor(df[df$X3, ]) factor_df</p>
+</div>
 
 
 
