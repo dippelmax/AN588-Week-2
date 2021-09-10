@@ -171,3 +171,36 @@ str(df)
 df[, 3]
 str(df[, 3])
 df$name.last
+str(df$name.last)
+df[3]
+str(df[3])
+df["name.last"]
+str(df["name.last"])
+
+df <- cbind(df, id = c(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16,
+    17, 18, 19, 20))
+df <- cbind(df, school = c("BU", "BU", "Harvard", "Harvard", "BU", "Boston College",
+    "MIT", "BU", "BU", "UMASS Boston", "Harvard", "BU", "Boston College", "BU",
+    "Harvard", "MIT", "Harvard", "BU", "UMASS Boston", "Harvard"))
+df
+
+new_df <- df[df$school == "BU", ]
+new_df
+new_df <- df[df$school == "BU", c("name.last", "name.first", "school")]
+new_df
+
+```{r}
+# Challenge 5
+
+m <- matrix(data = c(3, 0, 1, 23, 1, 2, 33, 1, 1, 42, 0, 1, 41, 0, 2), nrow = 5, ncol = 3, byrow = TRUE)
+m
+df <- data.frame(m)
+df
+new_df <- df[df$X2, ]
+new_df
+factor_df <- as.factor(df[df$X3, ])
+factor_df
+```
+
+
+
